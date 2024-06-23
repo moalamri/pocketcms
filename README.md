@@ -22,12 +22,9 @@ From there, PocketBase will run in its usual path of `localhost:8090/_/` and Poc
 
 ### Initial Setup
 
-1. log in to pocketbase
-2. create an auth collection called `pcms__users`
-3. create a user
-4. visit pocketcms at `localhost:8090/cms` and sign in as the user you created
-5. run through initial setup for pocketcms
-6. voila!
+1. log in to pocketbase at `localhost:8090/_/`
+2. visit pocketcms at `localhost:8090/cms/` and create your first user
+3. voila!
 
 Now that you are set up, any collections you create inside PocketBase prefixed with
 `pcms_` and with api rules **not** set to admin only, those collections will be
@@ -55,7 +52,7 @@ go run main.go serve
 2. in another terminal, open the `ui/` dir and run:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 which should spin up vite at `localhost:3000`. This will give you all the HMR goodness.
